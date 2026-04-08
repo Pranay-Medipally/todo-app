@@ -25,7 +25,7 @@ pipeline {
             steps {
                 sh 'docker stop  todo-app || true'
                 sh 'docker rm  todo-app || true'
-                sh 'docker run -d -p 3000:3000 --name todo-app  todo-app'
+                sh 'docker run -d -p 3002:3000 --name todo-app  todo-app'
             }
         }
     }
